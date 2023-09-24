@@ -8,6 +8,7 @@ body {
 
 body::-webkit-scrollbar {
   width: 6px;
+  cursor: pointer;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -17,6 +18,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .scrolling-wrapper {
+  cursor: pointer;
   overflow-x: scroll;
   margin-bottom: 2rem;
   margin-top: 2rem;
