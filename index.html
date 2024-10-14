@@ -3,8 +3,8 @@
 
 <head>
   <meta http-equiv='cache-control' content='no-cache'>
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
 
 
   <meta charset="utf-8" />
@@ -26,7 +26,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" />
   <link rel="stylesheet" href="style.css" />
   <!--====== Bootstrap CSS ======-->
-  <link rel="stylesheet" href="https://cdn.ayroui.com/1.0/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.ayroui.com/1.0/css/bootstrap.min.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!--====== Lineicons CSS ======-->
   <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
@@ -198,7 +200,6 @@
               <p>
                 We offer a variety of services to help you design functional, attractive, personalized and pleasing
                 interiors.
-
               </p>
             </div>
           </div>
@@ -209,35 +210,35 @@
 
     <div class="container">
       <div class="single-head">
-        <div class="row">
+        <div class="row d-flex justify-content-center">
           <div class="col-lg-4 col-md-6 col-12">
             <div class="single-service">
               <span class="serial">01</span>
               <h4>Interior Design Consultation</h4>
-              <p>
-                Our interior designers evaluate client demands, preferences, and budget. We offer expert color,
-                furniture, layout, lighting, and décor advice. Designers work with you to produce a style-appropriate
-                design.
-              </p>
+              <p></p>
               <div class="light-rounded-buttons">
-                <a href="javascript:void(0)" class="btn primary-btn"> Read More </a>
+                <a href="javascript:void(0)" class="btn primary-btn" data-bs-toggle="modal"
+                  data-bs-target="#serviceModal" data-service="consultation">
+                  Process
+                </a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-12">
             <div class="single-service">
               <span class="serial">02</span>
-              <h4>Space Planning and Layout Design</h4>
-              <p>
-                Our Interior designers save space. Our precise floor plans and layouts enhance room or property use and
-                movement. This includes arranging furniture and accessories for aesthetics and utility.
-              </p>
+              <h4>Interior Design Build Services</h4>
+              <p></p>
               <div class="light-rounded-buttons">
-                <a href="javascript:void(0)" class="btn primary-btn"> Read More </a>
+                <a href="javascript:void(0)" class="btn primary-btn" data-bs-toggle="modal"
+                  data-bs-target="#serviceModal" data-service="build-services">
+                  Process
+                </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-12">
+
+          <!-- <div class="col-lg-4 col-md-6 col-12">
             <div class="single-service">
               <span class="serial">03</span>
               <h4>Material and Finish Selection</h4>
@@ -249,14 +250,73 @@
                 <a href="javascript:void(0)" class="btn primary-btn"> Read More </a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
   </section>
+  <!-- Modal -->
+  <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="serviceModalLabel">Service Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Details about the selected service will be displayed here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const serviceDescriptions = {
+      'consultation': `
+    <p>
+      At Nuway Interiors, our Interior Design Consultation service is designed to provide clients with expert guidance on transforming their spaces. Whether you’re looking for a complete renovation or a fresh perspective on an existing layout, we begin by understanding your unique vision, lifestyle needs, and design preferences. Our team of experienced designers listens carefully to your ideas and helps you shape them into a cohesive design plan that reflects both your personality and practical needs.
+    </p>
+    </br>
+    <p>
+      During the consultation, we assess the existing space and provide valuable insights on how to optimize functionality, improve aesthetics, and choose the right materials, colors, and furnishings. We offer solutions that blend style with practicality, ensuring that every element serves a purpose while enhancing the overall visual appeal of the room.
+    </p>
+    </br>
+    <p>
+      Our goal is to make the design process seamless and enjoyable for you. We consider factors such as lighting, spatial arrangement, and design trends, and provide you with expert recommendations that align with your budget. With Nuway Interiors, you can expect a tailored consultation that leaves you with a clear design direction and actionable ideas to transform your space into something extraordinary.
+    </p>
+  `,
+      'build-services': `
+    <p>
+      Nuway Interiors offers a full range of interior design and build services, catering to both residential and commercial clients. Our process begins with a deep dive into the client’s vision, where we gather all the necessary information regarding their functional requirements, lifestyle preferences, and specific needs for the space. This allows us to have a clear understanding of their expectations before we move forward with the design phase.
+    </p>
+    </br>
+    <p>
+      Once we have a solid grasp of what the client wants, we begin creating a customized design that not only meets their functional needs but also enhances the aesthetics of the space. Our goal is to strike the perfect balance between functionality and beauty, ensuring that the final design is both practical and visually appealing.
+    </p>
+    </br>
+    <p>
+      Budget is a key consideration for us at every stage of the project. We work closely with our clients to ensure that all design and build decisions align with their financial expectations, delivering a tailored solution that maximizes value without compromising on quality. Whether it’s a simple renovation or a complex redesign, Nuway Interiors is committed to bringing our client’s vision to life with meticulous attention to detail and a focus on creating spaces that reflect their unique personality and style.
+    </p>
+  `
+    };
 
+    document.querySelectorAll('.btn[data-bs-toggle="modal"]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const serviceType = this.getAttribute('data-service');
+        const modalTitle = document.getElementById('serviceModalLabel');
+        const modalBody = document.querySelector('#serviceModal .modal-body');
+        const serviceTitle = this.closest('.single-service').querySelector('h4').innerText;
 
-  <section class="about-area about-three">
+        // Set modal title and body content based on the service
+        modalTitle.innerText = serviceTitle;
+        modalBody.innerHTML = serviceDescriptions[serviceType];
+      });
+    });
+  </script>
+
+  <!-- <section class="about-area about-three">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
@@ -300,7 +360,7 @@
 
     </div>
 
-  </section>
+  </section> -->
 
 
   <section class="video-area video-two" id="video">
@@ -601,7 +661,7 @@
 
               <div class="info-box">
                 <h4 class="name">Rajendra Prasad M</h4>
-                <span class="designation">Founding Partner, Principal Architect <br> <br>  </span>
+                <span class="designation">Founding Partner, Principal Architect <br> <br> </span>
               </div>
 
             </div>
@@ -968,7 +1028,7 @@
                 <a href="javascript:void(0)"> <i class="lni lni-twitter-original"></i> </a>
               </li>
               <li>
-                <a href="javascript:void(0)"> <i class="lni lni-instagram-filled"></i> </a>
+                <a href="https://www.instagram.com/nuwayinteriors/"> <i class="lni lni-instagram-filled"></i> </a>
               </li>
               <li>
                 <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
@@ -1001,8 +1061,8 @@
   </a>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
   <!-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->

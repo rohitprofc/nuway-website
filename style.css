@@ -940,7 +940,7 @@ p {
 .services-seven .single-service {
   position: relative;
   text-align: left;
-  padding: 50px;
+  padding: 30px;
   box-shadow: var(--shadow-2);
   border-radius: 5px;
   border: 1px solid var(--light-3);
